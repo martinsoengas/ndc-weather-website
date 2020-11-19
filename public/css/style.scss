@@ -6,10 +6,9 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #0dcaf0;
+  &:hover {
+    color: #0dcaf0;
+  }
 }
 
 body {
@@ -18,20 +17,14 @@ body {
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
+
 }
 
 .main-content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 footer {
@@ -67,28 +60,23 @@ input {
   vertical-align: middle;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-}
-
-input:focus {
-  -webkit-box-shadow: 0 0 3px #0dcaf0;
-          box-shadow: 0 0 3px #0dcaf0;
-  outline: none;
+  &:focus {
+    box-shadow: 0 0 3px #0dcaf0;
+    outline: none;
+  }
 }
 
 #btn-search {
-  margin: 0;
+    margin: 0;
   border-radius: unset;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-}
-
-#btn-search:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#btn-search:hover {
-  color: white;
+  &:focus {
+  box-shadow: none;
+  }
+  &:hover {
+    color: white;
+  }
 }
 
 .display-none {
@@ -102,4 +90,3 @@ input:focus {
 .card-header {
   border-bottom: none;
 }
-/*# sourceMappingURL=style.css.map */
